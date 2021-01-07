@@ -1,0 +1,63 @@
+#menu{
+    text-align: center;
+  
+}
+#main{
+
+}
+.children{
+    background-color: red;
+  width:auto;
+  margin: 0.5rem;
+  
+  box-sizing: border-box;
+  border: 3px solid;
+}
+.children div {
+    width: 100%;
+    background-color: gray;
+    box-sizing: border-box;
+   
+}
+.children div span{
+border: 2px solid;
+font-size:30px;
+padding:0px 20px;
+position: relative;
+float: right;
+box-sizing: border-box;
+}
+.children p{
+    float:none;
+    padding:40px 20px 10px;
+   
+}
+#chicken{
+    background-color: gray;
+}
+#beef{
+    background-color: aqua;
+}
+#sushi{
+    background-color: pink;
+}
+
+
+@media only screen and (min-width: 768px) {
+    .main{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around
+    }
+    .child1, .child2{
+        width: 40%;
+    }
+    .child3{
+        width:100%;
+    }
+  }
+@media only screen and (min-width: 992px) {
+    .child1, .child2,.child3{
+        max-width: 28%;
+    }
+  }
